@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f9b6fbef6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/finallogo2.png" alt="">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!--<li><a href="#">Skills</a></li>-->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick ="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Yadnyasha Dinkar</span><br> From India. </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="subheading">About Me</h1>
+                    <p class = "info">Hi, I'm Yadnyasha Dinkar, a passionate web  developer with a strong enthusiasm for building innovative and user-friendly applications. With a solid foundation in web development.
+                        As a web developer, I've honed my skills in [list specific technologies you're proficient in, e.g., HTML, CSS, JavaScript, React, etc.]. I'm dedicated to crafting responsive, efficient, and scalable web applications that meet the highest standards of quality and usability.
+                        
+                        Feel free to explore my portfolio, and let's get in touch if you'd like to discuss potential projects or opportunities!</p>
+                    <div class="tab_title">
+                        <p class = "tab_link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab_link" onclick="opentab('education')">Education</p>
+                        <p class = "tab_link " onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab_contains active_tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Developing the Web Page and Website</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contains" id="education">
+                        <ul>
+                            <li><span>2021(Persuing)</span><br>Information Technology | Konkan Gyanpeeth College Of Engineering </li>
+                            <li><span>2021</span><br>XII (HSC) | G.V. Khade Vidyalay Shahapur </li>
+                            <li><span>2019</span><br>X (SSC) | Vidyamandir Manda- Titwala </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contains" id="experience">
+                        <ul>
+                            <li><span>June 2024 - July 2024</span><br>Internship at Prodigy Infotech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/tictactoe.jpg" >
+                    <div class="layer">
+                        <h3>TIC-TAC-TOE </h3>
+                        <p>
+                            This Project is all about Tic-Tac-Toe game in which both player can play the game ot the player can play the game with AI.
+                        </p>
+                        <a href="https://github.com/yadnyashadinkar14/PRODIGY_WD_03"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stopwatch.jpg" >
+                    <div class="layer">
+                    <h3>Stopwatch</h3>
+                    <p>In this we created a Stopwatch with the help of HTML CSS and JavaScript. In this project we can start the time pause it take the lap and reset it </p>
+                    <a href="https://github.com/yadnyashadinkar14/PRODIGY_WD_02"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="images/Weather.jpg" >
+                    <div class="layer">
+                    <h3>Weather Forcasting</h3>
+                    <p>This is the Weather Forcasting App . in this you can get the live location weather . for these we have use HTML CSS and JavaScript and API.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> yadnyashad@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9875468970</p>
+                    <div class="social_icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name = 'Name' placeholder="Your Name" required>
+                        <input type="email" name = "Email" placeholder="Your Email" required>
+                        <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yadnyasha Personal Portfolio @2024 </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
